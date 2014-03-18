@@ -1,0 +1,32 @@
+<h2>
+  
+Some RANDOM selected tours costs:
+</h2>
+<h1>
+  
+<%=
+"RANDOM : #{-1 * @c.fitness.truncate}"
+%>
+  </h1>
+<%=
+"#{@c.data.collect{|c| @data_set.data_labels[c]} * ', '}"
+%>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>
+Result for genetic search
+</h2>
+
+<h1>
+  
+<%=
+  "GENETIC : #{-1 * @result.fitness.truncate}"
+%>
+  </h1> TOUR: 
+<%=
+      "#{@result.data.collect{|c| @data_set.data_labels[c]} * ', '}"
+%>
+<br>
